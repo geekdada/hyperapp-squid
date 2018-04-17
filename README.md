@@ -6,7 +6,7 @@
 
 
 ```
-docker run -e USERNAME=hyperapp -e PASSWORD=hyperapp -p 3128:3128 hyperapp/squid
+docker run -e USERNAME=hyperapp -e PASSWORD=hyperapp -p 3128:3128 geekdada/squid
 ```
 
 There are some optional environment variables:
@@ -21,13 +21,13 @@ WORDS=Welcome!
 If you want Squid to listen on the loaclhost, the command would be:
 
 ```
-docker run -e SQUID_USERNAME=foo -e SQUID_PASSWORD=bar -e PORT=127.0.0.1:3128 -p 3128:3128 hyperapp/squid
+docker run -e SQUID_USERNAME=foo -e SQUID_PASSWORD=bar -e PORT=127.0.0.1:3128 -p 3128:3128 geekdada/squid
 ```
 
 If your VPS have IPV6 address, you can turn the option off, the command would be:
 
 ```
-docker run -e SQUID_USERNAME=foo -e SQUID_PASSWORD=bar -e ONLYV4=off -p 3128:3128 hyperapp/squid
+docker run -e SQUID_USERNAME=foo -e SQUID_PASSWORD=bar -e ONLYV4=off -p 3128:3128 geekdada/squid
 ```
 
 Add simple auth.
