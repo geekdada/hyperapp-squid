@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER HyperApp <HyperAppCloud@gmail.com>
+MAINTAINER geekdada <liyihang1991@gmail.com>
 
 RUN apk --no-cache --update add squid>3.5.23-r0 curl apache2-utils
 
